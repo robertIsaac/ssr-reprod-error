@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommentComponent } from '../comment/comment.component';
 
 @Component({
@@ -11,7 +11,4 @@ import { CommentComponent } from '../comment/comment.component';
   styleUrl: './question.component.css'
 })
 export class QuestionComponent {
-  protected readonly question = signal<{id: number} | undefined>(
-    {id: 1},
-  );
 }
